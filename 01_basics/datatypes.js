@@ -23,3 +23,22 @@ const second_id = Symbol("222");
 
 console.log(id === second_id);
 
+const user = {
+    name:"sumit",
+    age: 22
+}
+
+const adult = function isAdult(user){
+    return (user.age >= 18 )? true : false;
+}
+
+const allAdult = [];
+allAdult.push(adult);
+
+console.log(typeof id);//symbol
+console.log(typeof allAdult);// function
+console.log(typeof BigInt);
+console.log(typeof user);
+console.log(typeof adult);
+
+
