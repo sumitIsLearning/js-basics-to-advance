@@ -1,7 +1,7 @@
 /*
  string , Number, boolean , null , undefined  , Symbol, BigInt
  These are all primative data types
- objects is a non-primative data type
+ objects, array, functions is a non-primative data type
 */
 
 /*
@@ -13,4 +13,13 @@ console.log(typeof undefined);// undefined
 console.log(typeof Symbol);// function
 console.log(typeof BigInt);// function
 */
+
+// js is dynamically typed language
+
+// symbol
+const id = Symbol("222");
+
+const second_id = Symbol("222");
+
+console.log(id === second_id);
 
