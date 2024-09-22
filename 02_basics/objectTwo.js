@@ -1,4 +1,4 @@
-const tinderUser = new Object();
+const tinderUser = new Object(); // singleton way of declaring object
 
 tinderUser.id = "123abc";
 tinderUser.name = "sammy";
