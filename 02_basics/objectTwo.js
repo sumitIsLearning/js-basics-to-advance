@@ -1,41 +1,50 @@
-// singleton
-// Object.create is a constructor
+const tinderUser = new Object();
 
+tinderUser.id = "123abc";
+tinderUser.name = "sammy";
+tinderUser.isLoggedIn = false;
 
-// object literals
+// console.log(tinderUser);
 
-// how declare a symbol and use it in object literals
-const mysym = Symbol('key1');
-
-const user = {
-    name: "sumit",
-    "lastname": "chakraborty",
-    age: 21,
-    location: "Assam",
-    [mysym]: "Mykey1",
-    Email: "sumit@outreachright.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+const regularUser = {
+    email: "some@gmail.com",
+    fullname: {
+        user1: {
+            firstname: "sumit",
+            lastname: "chakraborty"
+        },
+        user2: {
+            firstname: "joy",
+            lastname: "Das"
+        },
+        user3: {
+            firstname: "swarnav",
+            lastname: "chatterjee"
+        },
+    }
 }
 
-// console.log(user.name);
-// console.log(user[mysym]); // this is way to access symbol from an object 
-// // how to access the key from an object if it is declared in quotes
-// console.log(user["lastname"]);
+// console.log(regularUser.fullname.user1.firstname);
 
-// how to freeze an object, basically means that you cannot change the values of keys
-// Object.freeze(user);
-// user.name = "joy";
-// console.log(user.name);
 
-user.greeting = function() {
-    console.log("Hello JS user");
-}
+const obj1 = {1: 'a', 2: 'b'};
+const obj2 = {3: 'c', 4: 'd'};
 
-// how to refer the same object , (use "this")
-user.greetingTwo = function() {
-    console.log(`Your Email is: ${this.Email}`);
-}
+// const obj3 = Object.assign({}, obj1, obj2); // first parameter is target where everyelement will be copied // other parameters are source from where the copy will happen
 
-user.greeting();
-user.greetingTwo();
+// the most usable one is
+const obj3 = {...obj1, ...obj2};
+
+// console.log(obj3);
+
+
+console.log(tinderUser);
+
+console.log(Object.keys(tinderUser)); // returns you the array of keys
+
+console.log(Object.values(tinderUser)); // returns you the array of values of the keys
+
+console.log(Object.entries(tinderUser)); // converts each element of array of objects to array of arrays
+
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
