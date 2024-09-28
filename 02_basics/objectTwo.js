@@ -38,13 +38,25 @@ const obj3 = {...obj1, ...obj2};
 // console.log(obj3);
 
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // returns you the array of keys
+// console.log(Object.keys(tinderUser)); // returns you the array of keys
 
-console.log(Object.values(tinderUser)); // returns you the array of values of the keys
+// console.log(Object.values(tinderUser)); // returns you the array of values of the keys
 
-console.log(Object.entries(tinderUser)); // converts each element of array of objects to array of arrays
+// console.log(Object.entries(tinderUser)); // converts each element of array of objects to array of arrays
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// destructuring
+const course = {
+    coursename: "js in hindi",
+    price: 99900,
+    courseInstructor: "sumit"
+}
+
+const {courseInstructor: Instructor} = course;
+console.log(Instructor);
+
+// JavaScript is a garbage-collected language. JavaScript removes the pain of memory management by automatically allocating its memory and freeing it up (garbage collection) when not in use.
