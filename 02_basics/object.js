@@ -33,7 +33,7 @@ const userOne = {
 // console.log(userOne["firstName"]);
 
 /* TODO: you can also declare a function inside a object */
-userOne.greeting = function() {
+userOne.greeting = () => {
     return "Hello User"
     // console.log("Hello User");
     // return 0;
@@ -55,7 +55,7 @@ userOne.greeting = function() {
 // userOne.greetingTwo = function(){
 //     console.log(`your Email: ${this.email}`); // `` is called string interpolation
 // }
-
+// In class we use "this" to refer to the object created form that constructor
 // userOne.greetingTwo();
 
 

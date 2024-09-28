@@ -56,7 +56,7 @@ const course = {
     courseInstructor: "sumit"
 }
 
-const {courseInstructor: Instructor} = course;
-console.log(Instructor);
+// const {courseInstructor: Instructor} = course;
+// console.log(Instructor);
 
 // JavaScript is a garbage-collected language. JavaScript removes the pain of memory management by automatically allocating its memory and freeing it up (garbage collection) when not in use.
